@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400&display=swap&subset=cyrillic');
+
+body{
+    font-family: 'Rubik', sans-serif;
+}
+
+
+a, li{
+    text-decoration: none;
+}
+
+._icon{
+    max-height: 50px;
+    max-width: 50px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background: #0AEB8D;
+}
+
+
+
+.Page_Header_leftSidebar{
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+.Page_Header_leftSidebar span{
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+    padding-left: 10px;
+}
+
+ input[type="checkbox"]{
+    display: none;
+}
+
+label{
+    display: none;
+}
+
+/* MAIN */
+
+
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+   margin-right: 20px;
+}
+
+.Page_Content{
+    position: relative;
+    width: 100%;
+}
+
+.bot_management{
+    width: 100%;
+    height: 900px;
+    background: red;
+}
+
+.users{
+    width: 100%;
+    height: 900px;
+    background: greenyellow;
+}
+
+
+.Header_Menu_button{
+    outline: none;
+    background: transparent;
+    border: 0px;
+    height: 60px;
+    color: white;
+    font-weight: 100;
+    text-align: start;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.Header_Menu_button:hover, .Header_Menu_button:active{
+    opacity: 0.5;
+}
+
+@media(max-width: 942px){
+    .Header_Menu_button{
+        font-size: 16px;
+    }
+    .Page_Header_leftSidebar span{
+        font-size: 19px;
+    }
+}
+
+@media(max-width: 793px){
+    header{
+        display: block;
+        background: transparent;
+        max-height: 100%;
+    }
+
+    .Page_Header_leftSidebar span{
+        display: none;
+    }
+    .Page_Main_Header{
+        max-height: 50px;
+    }
+    label{
+        display: inline-block;
+        width: 50%;
+        text-align: right;
+        z-index: 10;
+    }
+    .Page_Header_leftSidebar{
+        display: inline-block;
+        width: 50%;
+        text-align: left;
+    }
+
+    .Header_Menu_button{
+        width: 100%;
+        text-align: center;
+        height: 40px;
+    }
+
+    .Page_Main_Header{
+        display: flex;
+        position: relative;
+        background: #0AEB8D;
+        max-height: 75px;
+        z-index: 10;
+    }
+
+    input[type="checkbox"]{
+        display: none;
+    }
+    
+    nav{
+        width: 100%;
+        height: 0px;
+        background: #5f5f5f;
+        position: absolute; 
+        z-index: 99;
+        overflow-y: hidden;
+        display: block;
+        margin-right: 0px;
+        transition: 0.7s;
+    }
+
+    input[type="checkbox"]:checked ~ nav{
+        height: 200px;
+    }
+
+    .Header_Menu_button{
+        border-bottom: 1px solid gray;
+        font-size: 18px;
+    }
+    
+    .Header_Menu_button:hover, .Header_Menu_button:active{
+        background: gray;
+        opacity: 0.5;
+        border: 1px solid gray;
+    }
+}
+
+/*# sourceMappingURL=/style.493e6e98.css.map */

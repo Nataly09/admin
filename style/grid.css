@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400&display=swap&subset=cyrillic');
+
+body{
+    font-family: 'Rubik', sans-serif;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-rows: 75px auto 75px;
+}
+
+a, li{
+    text-decoration: none;
+}
+
+.icon{
+    max-height: 50px;
+}
+
+.main_header{
+    display: grid;
+    grid-template-columns: 200px auto;
+    position: relative;
+    z-index: 10;
+    background: #0AEB8D;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 180px;
+    padding-left: 10px;
+}
+
+.logo span{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 10px;
+}
+
+#button_menu{
+    z-index: 99;
+    position: absolute;
+    right: -50px;
+    top: 0px
+}
+
+.left_menu{
+    position: relative;
+    transform: translateX(-100%);
+    transition: 1s;
+}
+
+
+/* MAIN */
+
+
+
+main{
+    display: grid;
+    grid-template-columns: 200px auto;
+}
+
+nav {
+    background: cadetblue;
+    position: relative;
+    z-index: 99;
+}
+.closed_menu{
+    transform: translateX(-100%);
+    transition: 1s;
+}
+
+.open_menu{
+    transform: translateX(0%);
+    transition: 1s;
+}
+
+ul{
+    overflow-x: hidden;
+}
+
+#content{
+    position: relative;
+    padding-left: 20px;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+
+
+
+
+body{
+    font-family: 'Rubik', sans-serif;
+}
+
+
+a, li{
+    text-decoration: none;
+}
+
+.icon{
+    max-height: 50px;
+}
+
+.main_header{
+    position: relative;
+    max-height: 100px;
+    z-index: 10;
+    background: #0AEB8D;
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 180px;
+    padding-left: 10px;
+}
+
+.logo span{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 10px;
+}
+
+#button_menu{
+    z-index: 99;
+    position: absolute;
+    right: -50px;
+    top: 0px
+}
+
+.left_menu{
+    position: relative;
+    transform: translateX(-100%);
+    transition: 1s;
+}
+
+
+/* MAIN */
+
+
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    background: cadetblue;
+    position: relative;
+    z-index: 99;
+}
+.closed_menu{
+    width: 0px;
+    transition: 1s;
+}
+
+.open_menu{
+    width: 240px;
+    transition: 1s;
+}
+
+ul{
+    overflow-x: hidden;
+}
+
+#content{
+    position: relative;
+    width: 100%;
+    padding-left: 20px;
+    height: 100%;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+

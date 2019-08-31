@@ -1,0 +1,23 @@
+{
+  "name": "admin",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.2",
+    "parcel": "^1.12.3"
+  },
+  "dependencies": {
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "dom-to-image": "^2.6.0",
+    "page": "^1.11.4",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}
